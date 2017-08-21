@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navigation_bar1_height">48dp</dimen>
+    <dimen name="person_page_tab_strip1_height">42dp</dimen>
+    <dimen name="person_page_bottom1_height">45dp</dimen>
+
+    <declare-styleable name="auto_adjust_imageview"><attr format="reference|string" name="adjustType"/><attr format="reference|float" name="scaleRate"/></declare-styleable>
+    <dimen name="navigation_bar_height">48dp</dimen>
+
+</resources>
