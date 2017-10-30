@@ -5,10 +5,6 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.util.Log;
 
-
-/**
- * Created dexian on 16-9-28.
- */
 public class CustomHeightViewPager extends ViewPager {
     private final static String TAG = "CustomHeightViewPager";
     private int topHeight;
@@ -26,6 +22,7 @@ public class CustomHeightViewPager extends ViewPager {
         // height = ResolutionUtils.getScreenHeight(getContext()) - (int) ResolutionUtils.convertDpToPixel(CUSTOM_HEIGHT, getContext());
         // Log.d(TAG, "CustomHeightViewPager height = " + height);
     }
+
 
     private void init() {
         topHeight = getContext().getResources().getDimensionPixelSize(R.dimen.navigation_bar1_height) +

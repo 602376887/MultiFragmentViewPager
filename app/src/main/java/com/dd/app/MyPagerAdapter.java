@@ -2,23 +2,26 @@ package com.dd.app;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.util.Log;
+
 
 /**
  * Created by dengdun on 2017/8/17.
  */
 
-public class PagerAdapter extends FragmentStatePagerAdapter {
+public class MyPagerAdapter extends FragmentPagerAdapter {
     PagerFragment pagerFragment1;
     PagerFragment pagerFragment2;
     PagerFragment pagerFragment3;
 
-    public PagerAdapter(FragmentManager fm) {
+    public MyPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 
     @Override
     public Fragment getItem(int position) {
+        Log.d("MyPagerAdapter","getItem:"+position);
         switch (position){
             case 0:
                 if(pagerFragment1 == null){
